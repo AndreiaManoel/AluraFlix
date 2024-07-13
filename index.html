@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluraflix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Aluraflix</div>
+        <div class="button-container">
+            <button id="home" class="active">Home</button>
+            <button id="novo-video">NOVO VÍDEO</button>
+        </div>
+    </header>
+    <main>
+        <section id="home-section">
+            <h2>Vídeos</h2>
+            <div id="videos">
+                <!-- Os vídeos predefinidos aparecerão aqui -->
+            </div>
+        </section>
+        <section id="novo-video-form" style="display: none;">
+            <h2>Adicionar Novo Vídeo</h2>
+            <form>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo">
+
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" name="categoria">
+
+                <label for="imagem">Imagem (URL):</label>
+                <input type="text" id="imagem" name="imagem">
+
+                <label for="url-video">URL do Vídeo:</label>
+                <input type="text" id="url-video" name="url-video">
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Guardar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="logo">Aluraflix</div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
